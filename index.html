@@ -432,10 +432,11 @@ nav.fas{
                     <p>I am an Software Engineer with experience in software development and problem-solving.<br> I have experience with programming fundamentals, application development, and writing clean, efficient code.<br> I enjoy turning ideas into functional software solutions and continuously learning new technologies to improve my skills.<br> I am motivated, detail-oriented, and eager to contribute to real-world projects as a software developer.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links active-link " onclick="opentab('certificates')">Certificates</p>
-                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                       <!-- 1. Only Experience gets active-link -->
+<p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
 
                      <div class="tab-contents active-tab" id="experience">
@@ -457,7 +458,7 @@ nav.fas{
 
                         </ul>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents" id="skills">
                         <ul>
                             <li><span>Programming Languages</span><br>Java,Spring Boot,C#,Python,Angular</li>
                             <li><span>Web Developement</span><br>Html,Css,JavaScript,React</li>
